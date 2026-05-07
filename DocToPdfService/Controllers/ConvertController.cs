@@ -52,6 +52,14 @@ public class ConvertController : ControllerBase
         {
             return BadRequest(new { error = ex.Message });
         }
+        catch (InvalidOperationException ex) when (ex.Message.Contains("antrian penuh") || ex.Message.Contains("sedang sibuk"))
+        {
+            return StatusCode(StatusCodes.Status503ServiceUnavailable, new { error = ex.Message });
+        }
+        catch (TimeoutException ex)
+        {
+            return StatusCode(StatusCodes.Status503ServiceUnavailable, new { error = ex.Message });
+        }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Conversion failed for file {Name}", file.FileName);

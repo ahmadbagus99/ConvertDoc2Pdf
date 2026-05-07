@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
-builder.Services.AddScoped<IDocumentConverter, LibreOfficeConverter>();
+builder.Services.AddSingleton<IDocumentConverter, LibreOfficeConverter>();
 
 builder.WebHost.ConfigureKestrel(options =>
 {
