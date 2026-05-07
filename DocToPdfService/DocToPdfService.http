@@ -1,0 +1,6 @@
+@DocToPdfService_HostAddress = http://localhost:5056
+
+GET {{DocToPdfService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
