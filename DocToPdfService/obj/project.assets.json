@@ -83,24 +83,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/ahmadbagus99/.nuget/packages/": {}
+    "C:\\Users\\ahmad.ariyanto\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahmadbagus99/Documents/DocToPdfService/DocToPdfService/DocToPdfService.csproj",
+      "projectUniqueName": "C:\\Users\\ahmad.ariyanto\\Documents\\GitHub\\ConvertDoc2Pdf\\DocToPdfService\\DocToPdfService.csproj",
       "projectName": "DocToPdfService",
-      "projectPath": "/Users/ahmadbagus99/Documents/DocToPdfService/DocToPdfService/DocToPdfService.csproj",
-      "packagesPath": "/Users/ahmadbagus99/.nuget/packages/",
-      "outputPath": "/Users/ahmadbagus99/Documents/DocToPdfService/DocToPdfService/obj/",
+      "projectPath": "C:\\Users\\ahmad.ariyanto\\Documents\\GitHub\\ConvertDoc2Pdf\\DocToPdfService\\DocToPdfService.csproj",
+      "packagesPath": "C:\\Users\\ahmad.ariyanto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ahmad.ariyanto\\Documents\\GitHub\\ConvertDoc2Pdf\\DocToPdfService\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ahmadbagus99/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ahmad.ariyanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -149,7 +156,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

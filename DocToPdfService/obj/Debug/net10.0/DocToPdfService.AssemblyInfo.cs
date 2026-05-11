@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DocToPdfService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0be7702ec485664147473be63dbe8f7845bbd2a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocToPdfService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocToPdfService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

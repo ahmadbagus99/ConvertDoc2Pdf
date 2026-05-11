@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DocToPdfService.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("convert")]
 public class ConvertController : ControllerBase
 {
     private readonly IDocumentConverter _converter;
