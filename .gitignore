@@ -1,0 +1,15 @@
+# Secrets - jangan pernah di-commit
+.env
+
+# Build outputs
+**/bin/
+**/obj/
+
+# IDE
+.vs/
+*.user
+.idea/
+.claude/
+
+# OS
+.DS_Store

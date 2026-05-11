@@ -4,13 +4,18 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "${PORT:-8080}:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - LibreOffice__ExecutablePath=/usr/bin/libreoffice
+      - BasicAuth__Username=${BASICAUTH_USERNAME}
+      - BasicAuth__Password=${BASICAUTH_PASSWORD}
+      - Conversion__MaxConcurrency=${CONVERSION_MAX_CONCURRENCY:-2}
+      - Conversion__MaxQueueSize=${CONVERSION_MAX_QUEUE_SIZE:-20}
+      - Conversion__QueueTimeoutSeconds=${CONVERSION_QUEUE_TIMEOUT_SECONDS:-30}
     restart: unless-stopped
     deploy:
       resources:
         limits:
-          memory: 1g
-          cpus: "1.0"
+          memory: 4g
+          cpus: "2.0"
